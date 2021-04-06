@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+&nbsp;
+<div class="slideshow-container" style="max-width:1200px">
+<div class="slideshow-inner">
+<div class="mySlides fade"><a href="https://acnuk.org/products/gifts-of-faith-provide-trauma-healing/"><img  src='https://acnuk.org/wp-content/uploads/2020/02/ACN-20190725-89589.jpg' style='width: 100%;' alt="sally lightfoot crab"/><div class="text"><b>Help provide trauma healing</b><br />
+Support here the victims of the 2019 Easter bombings in Sri Lanka with Much-needed trauma healing and pastoral support.</div></a>
+</div>
+<div class="mySlides fade"><a href="https://acnuk.org/products/gifts-of-faith-widows-and-orphans/"><img src='https://acnuk.org/wp-content/uploads/2020/02/ACN-20160202-35479.jpg' style='width: 100%' alt="W&O"/><div class="text"><b>Widows and Orphans</b><br />
+Boko Haram has abducted and killed countless men, depriving families of fathers and husbands whom they depend on as breadwinners.Widows and orphans need your support in Nigeria. </div></a></div>
+<div class="mySlides fade"><a href="https://acnuk.org/products/gifts-of-faith-build-peaceful-communities/"><img src='https://acnuk.org/wp-content/uploads/2020/02/ACN-20180404-69606.jpg' style='width: 100%' alt="peaceful communities"/><div class="text"><b>Build peaceful communities</b><br />
+ACN is supporting a much-needed Youth for Peace project in Marawi, Philippines, which is bringing together young Christians and Muslims after the region was torn apart by violence. </div></a></div>
+<div class="mySlides fade"><a href="https://acnuk.org/products/gifts-of-faith-spread-the-gospel/"><img src='https://acnuk.org/wp-content/uploads/2020/02/ACN-20170622-56579.jpg' style='width: 100%' alt="Spread the Gospel"/><div class="text"><b>Spread the Gospel</b><br />
+The teaching of the Faith is at the heart of Christianity and at the heart of ACN’s work.</div></a></div>
+<div class="mySlides fade"><a href="https://acnuk.org/products/virtual-gift-help-build-a-church-or-chapel/"><img src='https://acnuk.org/wp-content/uploads/2020/02/ACN-20170629-57242-e1581607555310.jpg' style='width: 100%' alt="Church Chapel"/><div class="text"><b>Build a Church or Chapel</b><br />
+Following the liberation of several Christian towns and cities in Iraq, ACN is helping with the rebuilding of churches which were destroyed by Daesh (ISIS).</div></a></div>
+<div class="mySlides fade"><a href="https://acnuk.org/products/virtual-gift-support-a-refugee-family/"><img src='https://acnuk.org/wp-content/uploads/2020/02/ACN-20190726-89685.jpg' style='width: 100%' alt="Refugee Family"/><div class="text"><b>Support a Refugee Family</b><br />
+Refugee families in Syria and Lebanon are relying on our generosity this Lent. The needs remain huge and they have no one else to turn to but the Church.</div></a></div>
+</div><a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+<a class="next" onclick='plusSlides(1)'>&#10095;</a></div>
+<div style='text-align: center;'><span class="dot" onclick='currentSlide(1)'></span><span class="dot" onclick='currentSlide(2)'></span><span class="dot" onclick='currentSlide(3)'></span><span class="dot" onclick='currentSlide(4)'></span><span class="dot" onclick='currentSlide(5)'></span><span class="dot" onclick='currentSlide(6)'></span></div>
+<script type="text/javascript">
+var slideIndex = 1;
+var myTimer;
+var slideshowContainer;
+window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 4000);
+    //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+    //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+    slideshowContainer.addEventListener('mouseenter', pause)
+    slideshowContainer.addEventListener('mouseleave', resume)
+})
+// NEXT AND PREVIOUS CONTROL
+function plusSlides(n){
+  clearInterval(myTimer);
+  if (n < 0){
+    showSlides(slideIndex -= 1);
+  } else {
+   showSlides(slideIndex += 1); 
+  }
+//COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+  if (n === -1){
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+  } else {
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  }
+}
+//Controls the current slide and resets interval if needed
+function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  showSlides(slideIndex = n);
+}
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+pause = () => {
+  clearInterval(myTimer);
+}
+resume = () =>{
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+}  
+</script>
+</body>
+<style>@media only screen and (max-width: 992px) {.slideshow-container{max-width: 300px;position: relative;margin: none;}.mySlides {display: none;height:auto;border: none;overflow:hidden}.prev,.next {cursor: pointer;position: absolute;top: 30%;width: auto;margin-top: auto;padding: 20px;color: #d13a2f;font-weight: bold;font-size: 15px;transition: .6s ease;border-radius: 0 3px 3px 0}.text{color:#f2f2f2;font-size:1em;padding:8px;position:relative;bottom:3em;width:100%;text-align:left;background-color:#d13a2f;opacity:0.85;}.next{right:0px;border-radius:3px 3px 3px 3px}.prev{left:0;border-radius:3px 3px 3px 3px}.prev:hover, .next:hover{color:#f2f2f2;background-color:rgba(209,58,47, 0.8)}.numbertext{color:#f2f2f2;font-size:10x;padding:12px;position:absolute;bottom:0}}</style>
+<style>@media only screen and (min-width: 993px) {.slideshow-container{max-width: 800px;position: relative;margin: auto;}.mySlides {display: none;height: 600px;border: none;overflow: hidden}.prev,.next {cursor: pointer;position:absolute;top: 50%;width: auto;margin-top: -22px;padding: 16px;color: #da6158;font-weight: bold;font-size: 30px;transition: .6s ease;border-radius: 0 3px 3px 0} .text{color:#f2f2f2;font-size:1em;padding:12px;position:absolute;bottom:0;width:100%;text-align:left;background-color:#d13a2f;opacity:0.85;}.next{right:-50px;border-radius:3px 3px 3px 3px}.prev{left:-50px;border-radius:3px 3px 3px 3px}.prev:hover, .next:hover{color:#f2f2f2;background-color:rgba(209,58,47, 0.8)}.numbertext{color:#f2f2f2;font-size:12px;padding:12px;position:absolute;bottom:0}</style>
+<style>.dot{cursor:pointer;height:15px;width:15px;margin:0 2px;background-color:#bbb;border-radius:50%;display:inline-block;transition:background-color.6s ease}</style><style>.active, .dot:hover{background-color:#d13a2f}</style><style>.support_title{position: relative; font-family: 'Montserrat', sans-serif; font-weight: 700; color: #292a2b; padding: 30px 0; width: 70%; max-width: auto; z-index: 1; margin: 10px auto; align-self: center; border-top: solid 1px; border-bottom: solid 1px; background-color: #fff;}</style>
