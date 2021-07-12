@@ -1,7 +1,7 @@
 // Crear variables con la sentencia var
 
 var numero;
-numero = 7;
+numero = 5;
 
 console.log(numero);
 

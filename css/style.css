@@ -1,0 +1,16 @@
+.texto1 {
+  background: blueviolet;
+  color: white;
+  width: 400px;
+  padding: 10px;
+  margin: 20px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.texto2 {
+  background: red;
+  color: white;
+  width: 400px;
+  padding: 10px;
+}
