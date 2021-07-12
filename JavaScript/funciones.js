@@ -8,5 +8,5 @@ function sumar(a, b){
 
 console.log(sumar(2, 3));
 console.log(sumar(22, 34));
-console.log(sumar(16, 4));
+console.log(sumar(18, 4));
 console.log(sumar(43, 7));
